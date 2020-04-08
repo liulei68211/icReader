@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="厂家"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView2" />
+            <TextView
+                android:text="货物名称"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="22dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView3" />
+            <TextView
+                android:text="取样方式"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="18dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView4" />
+            <TextView
+                android:text="取样地点"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="18dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView5" />
+            <TextView
+                android:text="日期"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView6" />
+            <TextView
+                android:text="取样人"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="#0D1217"
+                android:id="@+id/textView7" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="215dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/linearLayout3">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampFactory" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampGoodsname" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/sampMode" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampAdress" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampTime" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampPeople" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+        <ToggleButton
+            android:text="取样"
+            android:textOff="取样"
+            android:textOn="取样"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/btSamp"
+            android:textColor="#ffffff"
+            android:background="#E6E6E6"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+    </LinearLayout>
+</LinearLayout>

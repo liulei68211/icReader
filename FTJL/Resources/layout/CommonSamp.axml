@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="取样地点"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textView1"
+                android:layout_marginTop="7dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp" />
+            <TextView
+                android:text="货物名称"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp"
+                android:id="@+id/textView3" />
+            <TextView
+                android:text="取样方式"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="21dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp"
+                android:id="@+id/textView4" />
+            <TextView
+                android:text="前后半车"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp"
+                android:id="@+id/textView7" />
+            <TextView
+                android:text="数量"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp"
+                android:id="@+id/textView5" />
+            <TextView
+                android:text="单位"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#0D1217"
+                android:textSize="22dp"
+                android:id="@+id/textView6" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/linearLayout3">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sampAdress" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sampGoods" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sampMode" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sampYshi" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:paddingBottom="1dip"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:id="@+id/sampCount" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sampunilt" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout6"
+        android:layout_marginBottom="0.0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayout4"
+            android:layout_weight="1">
+            <ToggleButton
+                android:text="读取计量卡"
+                android:textOff="读取计量卡"
+                android:textOn="读取计量卡"
+                android:layout_width="140dp"
+                android:layout_height="65dp"
+                android:id="@+id/btReadic"
+                android:background="#BD2B32"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayout4"
+            android:layout_weight="1">
+            <ToggleButton
+                android:text="样车取样"
+                android:textOff="样车取样"
+                android:textOn="样车取样"
+                android:layout_width="130dp"
+                android:layout_height="65dp"
+                android:id="@+id/btSamplecar"
+                android:background="#BD2B32"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

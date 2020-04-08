@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:id="@+id/linearLayout4"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout5"
+            android:layout_marginBottom="0.0dp">
+            <TextView
+                android:text="车牌号"
+                android:layout_width="match_parent"
+                android:id="@+id/textView1"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_height="wrap_content"
+                android:textColor="#0D1217" />
+            <TextView
+                android:text="操作人"
+                android:layout_width="match_parent"
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textColor="#0D1217" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout6"
+            android:layout_weight="0.4">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:id="@+id/carNumber"
+                android:enabled="true"
+                android:maxLength="10"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:maxLines="1" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:id="@+id/username"
+                android:enabled="true"
+                android:layout_marginTop="8dp"
+                android:maxLength="10"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/linearLayout4"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="10dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listView1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp">
+        <ToggleButton
+            android:text="收货"
+            android:textOff="收货"
+            android:textOn="收货"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btGet" />
+        <ToggleButton
+            android:text="发货"
+            android:textOff="发货"
+            android:textOn="发货"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btSet"
+            android:layout_marginTop="5dp" />
+        <ToggleButton
+            android:text="同步远程数据"
+            android:textOff="同步远程数据"
+            android:textOn="同步远程数据"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btSave"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+</LinearLayout>

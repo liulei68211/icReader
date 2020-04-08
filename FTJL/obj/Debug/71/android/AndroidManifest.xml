@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="FTJL.FTJL" android:versionCode="1" android:versionName="1.0" android:installLocation="internalOnly">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.NFC" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-feature android:name="android.hardware.nfc" android:required="true" />
+  <application android:allowBackup="true" android:label="FTJL" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@drawable/icon" android:name="android.app.Application" android:debuggable="true">
+    <activity android:name="icReader.icReader.MainActivity" android:label="济钢取样" android:launchMode="singleTop">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.TECH_DISCOVERED" />
+      </intent-filter>
+      <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter" />
+    </activity>
+    <activity android:name="icReader.icReader.Unload" android:label="济钢取样" android:launchMode="singleTop">
+      <intent-filter>
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.nfc.action.TECH_DISCOVERED" />
+      </intent-filter>
+      <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter" />
+    </activity>
+    <receiver android:name="icReader.icReader.BootReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <activity android:label="白灰取样" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.BaiHuiActivity" />
+    <activity android:label="生过烧标记" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.BaihuiListInfo" />
+    <activity android:label="通用取样" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.CommonSampClass" />
+    <activity android:label="ExtraBags" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.ExtraBags" />
+    <activity android:label="InsideDish" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.InsideDish" />
+    <activity android:label="LimeStoneActivity" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.LimeStoneActivity" />
+    <activity android:label="一车一抽" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.RandomClass" />
+    <activity android:label="RandomSmpp" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.RandomSmpp" />
+    <activity android:label="SampCm" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.SampCm" />
+    <activity android:label="SampMaction" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.SampMaction" />
+    <activity android:label="丰田肥业手持终端系统管理" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.SystemManager" />
+    <activity android:label="火车取样" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.TrainClass" />
+    <activity android:label="trainInfoList" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.TrainInfoList" />
+    <activity android:label="Unload" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.Unload" />
+    <activity android:label="YugaSamp" android:name="md5c9941de18f8845b0aa7d1df8210e9dfb.YugaSamp" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="FTJL.FTJL.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.FTJL.FTJL" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
